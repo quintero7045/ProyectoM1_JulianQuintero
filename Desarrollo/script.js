@@ -1,3 +1,4 @@
+
 const paletteElement = document.querySelector("#palette");
 const paletteSizeElement = document.querySelector("#palette-size");
 const generateButton = document.querySelector("#generate-button");
@@ -11,7 +12,10 @@ function generateHexColor() {
   let hex = "#";
 
   for (let i = 0; i < 6; i += 1) {
-    const randomIndex = Math.floor(Math.random() * characters.length);
+    const randomIndex = Math.floor(
+      Math.random() * characters.length
+    );
+
     hex += characters[randomIndex];
   }
 
@@ -54,12 +58,34 @@ function renderPalette(size) {
     code.className = "color-code";
     code.textContent = color;
 
-    info.append(name, code);
+    const copyButton = document.createElement("button");
+    copyButton.type = "button";
+    copyButton.className = "copy-button";
+    copyButton.textContent = "Copiar HEX";
+
+    copyButton.setAttribute(
+      "aria-label",
+      `Copiar el código ${color}`
+    );
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(color);
+
+        showToast(`¡Color ${color} copiado!`);
+      } catch (error) {
+        showToast("No se pudo copiar el color.");
+      }
+    });
+
+    info.append(name, code, copyButton);
     card.appendChild(info);
     paletteElement.appendChild(card);
   });
 
-  paletteStatus.textContent = `Paleta generada con ${size} colores.`;
+  paletteStatus.textContent =
+    `Paleta generada con ${size} colores.`;
+
   showToast(`¡Paleta de ${size} colores generada!`);
 }
 
@@ -68,8 +94,9 @@ generateButton.addEventListener("click", () => {
   renderPalette(size);
 });
 
-// Actualizar la paleta cuando cambie el selector
 paletteSizeElement.addEventListener("change", () => {
   const size = Number(paletteSizeElement.value);
   renderPalette(size);
 });
+
+renderPalette(Number(paletteSizeElement.value));
