@@ -68,4 +68,8 @@ generateButton.addEventListener("click", () => {
   renderPalette(size);
 });
 
-renderPalette(Number(paletteSizeElement.value));
+// Actualizar la paleta cuando cambie el selector
+paletteSizeElement.addEventListener("change", () => {
+  const size = Number(paletteSizeElement.value);
+  renderPalette(size);
+});
