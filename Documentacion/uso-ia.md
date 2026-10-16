@@ -1,145 +1,138 @@
-# 🤖 Documentación del uso de Inteligencia Artificial
+# Documentación del uso de Inteligencia Artificial
 
-## 📌 Objetivo
+## 1. Objetivo
 
-Durante el desarrollo del proyecto se utilizaron herramientas de Inteligencia Artificial como apoyo para:
+Durante el desarrollo de Colorfly Studio utilicé ChatGPT como herramienta de apoyo para resolver dudas técnicas, comprender algunos conceptos y buscar soluciones a problemas que surgieron durante la implementación.
 
-- Comprender conceptos técnicos.
-- Generar ideas de implementación.
-- Resolver dudas sobre HTML, CSS y JavaScript.
-- Documentar el proyecto.
-- Aprender buenas prácticas de Git y GitHub.
-- Configurar GitHub Pages.
+El objetivo fue utilizar la inteligencia artificial como recurso de consulta y aprendizaje, manteniendo mi participación en el desarrollo, la revisión del código y las pruebas de funcionamiento.
 
-La IA fue utilizada como herramienta de apoyo y aprendizaje, mientras que la implementación final fue revisada y comprendida por el estudiante.
+## 2. Herramienta utilizada
 
----
+- ChatGPT (OpenAI).
 
-## 🧠 Herramienta utilizada
+## 3. ¿Cómo utilicé la inteligencia artificial?
 
-- ChatGPT (OpenAI)
+Utilicé ChatGPT principalmente para consultar dudas concretas relacionadas con HTML, CSS, JavaScript, Git y GitHub Pages.
 
----
+Las consultas estuvieron orientadas a comprender el funcionamiento de determinadas instrucciones, identificar posibles errores y conocer alternativas para mejorar algunas características del proyecto.
 
-## 📋 Prompts utilizados
+La ayuda recibida se revisó teniendo en cuenta la estructura existente de la aplicación. Posteriormente, realicé pruebas para comprobar el comportamiento de las funcionalidades modificadas.
 
-### Prompt 1
+## 4. Ejemplos de consultas y aprendizajes
 
-```text
-Necesito desarrollar un proyecto de un generador de paletas de colores para un bootcamp. Debe incluir HTML semántico, CSS externo, JavaScript, generación aleatoria de colores, accesibilidad y despliegue en GitHub Pages.
-```
+### Consulta 1. HTML semántico y accesibilidad
 
-Resultado:
+**Objetivo:** Comprender el propósito de las etiquetas semánticas y de algunos atributos de accesibilidad utilizados en la aplicación.
 
-- Se definió la estructura general del proyecto.
-- Se identificaron los requisitos funcionales.
+**Aprendizaje:** Reconocer cómo la estructura HTML contribuye a organizar el contenido y facilitar su interpretación por parte de los usuarios y las tecnologías de asistencia.
 
----
+### Consulta 2. Generación aleatoria de colores
 
-### Prompt 2
+**Objetivo:** Resolver dudas sobre la generación de códigos hexadecimales y el uso de JavaScript para mostrar los colores en la página.
 
-```text
-Genera el archivo index.html utilizando etiquetas semánticas y buenas prácticas de accesibilidad.
-```
+**Aprendizaje:** Comprender el uso de funciones, variables y manipulación del DOM en la generación dinámica de las tarjetas.
 
-Resultado:
+### Consulta 3. Actualización del selector de la paleta
 
-- Creación de la estructura HTML.
-- Inclusión de labels y atributos ARIA.
+**Objetivo:** Consultar cómo actualizar la cantidad de colores cuando el usuario cambia la opción seleccionada.
 
----
+**Aprendizaje:** Comprender el evento `change` y la reutilización de la función `renderPalette()`.
 
-### Prompt 3
+### Consulta 4. Copia de códigos HEX
 
-```text
-Genera el archivo script.js para crear colores aleatorios y renderizar dinámicamente la paleta.
-```
+**Objetivo:** Buscar orientación para implementar la copia de códigos de color desde las tarjetas.
 
-Resultado:
+**Aprendizaje:** Comprender el uso de eventos `click`, la API del portapapeles y el manejo de posibles errores.
 
-- Implementación de funciones JavaScript.
-- Manipulación del DOM.
-- Eventos y renderizado dinámico.
+### Consulta 5. Estilos y diseño responsive
 
----
+**Objetivo:** Resolver dudas relacionadas con la presentación visual de la aplicación y su adaptación a diferentes tamaños de pantalla.
 
-### Prompt 4
+**Aprendizaje:** Comprender cómo las reglas CSS y las media queries permiten mejorar la presentación en dispositivos con distintas dimensiones.
 
-```text
-Explícame el funcionamiento del código JavaScript línea por línea.
-```
+### Consulta 6. Git y GitHub Pages
 
-Resultado:
+**Objetivo:** Aclarar dudas sobre el registro de cambios, el uso de commits y la publicación del proyecto.
 
-- Comprensión de:
-  - Funciones.
-  - Eventos.
-  - Arrays.
-  - Math.random().
-  - DOM.
+**Aprendizaje:** Comprender la función de comandos como `git status`, `git add`, `git commit` y `git push`, así como la importancia de revisar el estado del repositorio antes de subir cambios.
 
----
+*Nota: los ejemplos anteriores resumen los temas de consulta. Las capturas de conversaciones originales se utilizarán como evidencia cuando estén disponibles.*
 
-### Prompt 5
+## 5. Participación y responsabilidad del estudiante
 
-```text
-Explícame cómo utilizar Git, GitHub y GitHub Pages para publicar el proyecto.
-```
+Durante el desarrollo fue necesario revisar las sugerencias recibidas, comprender las instrucciones utilizadas y comprobar los resultados en la aplicación.
 
-Resultado:
+Las pruebas manuales permitieron verificar que la paleta se generara correctamente y que los botones de copia mostraran la respuesta esperada.
 
-- Aprendizaje del flujo:
+La inteligencia artificial se utilizó como apoyo para resolver dudas y orientar mejoras, sin sustituir la responsabilidad de comprender el funcionamiento del proyecto y revisar los cambios realizados.
 
-```text
-git status
-git add
-git commit
-git push
-git pull
-```
+## 6. Aprendizajes obtenidos
+
+El proceso permitió reforzar conocimientos relacionados con:
+
+- HTML semántico y accesibilidad.
+- CSS y diseño responsive.
+- JavaScript y manipulación del DOM.
+- Eventos y generación dinámica de elementos.
+- Manejo de errores.
+- Git y GitHub.
+- Despliegue mediante GitHub Pages.
+
+## 7. Consideración ética
+
+La inteligencia artificial se utilizó como herramienta de apoyo educativo. Su utilización implicó revisar las sugerencias recibidas y comprobar los resultados antes de incorporarlos al proyecto.
+
+La responsabilidad sobre el código final, su funcionamiento y la documentación entregada corresponde al estudiante.
 
 ---
 
-### Prompt 6
+## 8. Evidencias del uso de Inteligencia Artificial
 
-```text
-Ayúdame a configurar GitHub Actions para desplegar la carpeta Desarrollo en GitHub Pages.
-```
+En esta sección se presentan evidencias de consultas realizadas a ChatGPT durante el proceso de aprendizaje y desarrollo de Colorfly Studio.
 
-Resultado:
+Las capturas permiten mostrar algunos de los temas consultados y las explicaciones recibidas.
 
-- Configuración del archivo:
+### Evidencia 1. Consulta sobre JavaScript
 
-```text
-.github/workflows/static.yml
-```
+Se presenta una conversación relacionada con un error de JavaScript al utilizar el método `push()`.
 
----
+La explicación permitió comprender la importancia de inicializar correctamente los arreglos antes de agregar elementos.
 
-## 📚 Aprendizajes obtenidos
+Esta captura se incluye como evidencia de aprendizaje de JavaScript y no como prueba de una funcionalidad específica de Colorfly Studio.
 
-Durante el desarrollo del proyecto se fortalecieron conocimientos en:
+![Consulta sobre JavaScript](capturas/consulta-ia-js.png)
 
-- HTML5 semántico.
-- CSS3.
-- JavaScript.
-- Manipulación del DOM.
-- Eventos.
-- Accesibilidad.
-- Git.
-- GitHub.
-- GitHub Actions.
-- GitHub Pages.
-- Documentación técnica.
+### Evidencia 2. Consulta sobre Git y GitHub
 
----
+Se incluye una conversación en la que se consultó el significado de los mensajes mostrados por Git después de revisar el estado del repositorio.
 
-## ⚠️ Consideración ética
+La explicación permitió comprender los conceptos de rama principal, sincronización con el repositorio remoto y directorio de trabajo limpio.
 
-La Inteligencia Artificial fue utilizada como una herramienta de apoyo educativo para comprender conceptos y mejorar el proceso de aprendizaje, manteniendo siempre la responsabilidad del estudiante sobre la implementación final del proyecto.
+![Consulta sobre Git y GitHub](capturas/problemas haciendo commit.png)
+
+### Evidencia 3. Pruebas de funcionamiento de Colorfly Studio
+
+Como parte de la documentación del proyecto, se incorporarán capturas de la aplicación funcionando en el navegador.
+
+Estas evidencias permitirán mostrar:
+
+- La generación aleatoria de paletas.
+- La selección de 6, 8 o 9 colores.
+- La actualización de la paleta al cambiar el selector.
+- La función para copiar códigos HEX.
+
+**Estado:** pendiente de incorporar las capturas correspondientes a la aplicación desarrollada.
+
+### Reflexión sobre el uso de IA
+
+Las consultas realizadas permitieron reforzar conceptos técnicos y comprender mejor algunas herramientas utilizadas durante el proyecto.
+
+Las sugerencias recibidas se revisaron antes de incorporarlas al trabajo, manteniendo la responsabilidad sobre el aprendizaje, las pruebas y la documentación.
 
 ---
 
 
-Por:
-Julian Andres Quintero
+
+
+
+Estudiante: Julian Andres Quintero
